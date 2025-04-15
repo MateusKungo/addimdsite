@@ -419,67 +419,36 @@
                         <span class="fs-5 fw-medium mx-4">949864096 / 923584804</span>
                     </a>
                 </div>
-                <form action="https://formsubmit.co/mateuskungo@gmail.com" method="POST"
-                    class="col-lg-6 wow fadeInUp mb-4" data-wow-delay="0.5s">
-                    <h2 class="mb-4">Seja um Investidor ou Patrocinador</h2>
-                    <p>Ajude-nos a promover a inclusão e os direitos das mulheres com deficiência. Junte-se a nós como
-                        investidor ou patrocinador para fazer a diferença.</p>
-
+                
+                <form action="https://formsubmit.co/ankutu236@gmail.com" method="POST">
+                    <!-- Necessário para enviar o e-mail -->
+                    <input type="hidden" name="_next" value="http://seusite.com/agradecimento.html"> <!-- Redireciona para uma página de agradecimento após o envio -->
+                    <input type="hidden" name="_captcha" value="false"> <!-- Desabilita o captcha, se necessário -->
+                    
                     <div class="row g-3">
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="Nome" name="Nome" placeholder="Seu Nome"
-                                    required>
-                                <label for="name">Seu Nome</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email"
-                                    required>
-                                <label for="email">Email</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="Telefone" name="Telefone"
-                                    placeholder="Seu Telefone" required>
-                                <label for="mobile">Seu Telefone</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="support_type" name="support_type">
-                                    <option selected>Doação Financeira</option>
-                                    <option value="Patrocínio de Projetos">Patrocínio de Projetos</option>
-                                    <option value="Investimento em Programas">Investimento em Programas</option>
-                                    <option value="Apoio Material">Apoio Material (Equipamentos, Serviços, etc.)
-                                    </option>
-                                </select>
-                                <label for="support_type">Tipo de Apoio</label>
-                            </div>
+                        <div class="col-xl-12">
+                            <input type="text" class="form-control bg-light border-0" name="name" placeholder="Seu Nome" style="height: 55px;" required>
                         </div>
                         <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" id="Mensagem" name="Mensagem"
-                                    placeholder="Deixe uma mensagem aqui" style="height: 130px"></textarea>
-                                <label for="message">Mensagem</label>
-                            </div>
+                            <input type="email" class="form-control bg-light border-0" name="email" placeholder="Seu E-mail" style="height: 55px;" required>
                         </div>
-
-                        <!-- Campo oculto para FormSubmit.co -->
-                        <input type="hidden" name="_replyto" value="{email}">
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/project.html">
-                        <!-- URL de redirecionamento após o envio -->
-                        <input type="hidden" name="_captcha" value="false"> <!-- Desativa o Captcha -->
-                        <input type="hidden" name="_subject" value="Novo pedido de orçamento">
-                        <!-- Define o assunto do e-mail -->
-
-                        <div class="col-12 text-center">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Enviar Agora</button>
+                        <div class="col-12">
+                            <select class="form-select bg-light border-0" name="service" style="height: 55px;" required>
+                                <option selected>Selecione um Serviço</option>
+                                <option value="Desenvolvimento de Software">Desenvolvimento de Software</option>
+                                <option value="Criação de Aplicativos">Criação de Aplicativos</option>
+                                <option value="Sites Personalizados">Sites Personalizados</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control bg-light border-0" rows="3" name="message" placeholder="Mensagem" required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-dark w-100 py-3" type="submit">Solicitar Orçamento</button>
                         </div>
                     </div>
                 </form>
+                
 
             </div>
         </div>
